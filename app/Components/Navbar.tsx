@@ -1,0 +1,63 @@
+import Link from 'next/link';
+import React from 'react'
+
+const Navbar = () => {
+  return (
+    <div className="navbar fixed top-0 left-0 w-full z-50 bg-base-100 shadow-sm">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
+          >
+            <li><Link href='#home' className='text-xl text-amber-400 hover:text-amber-600'>Home</Link></li>
+            <li><a href='#about' className='text-xl text-amber-400 hover:text-amber-600'>About</a></li>
+            <li><a href='#info' className='text-xl text-amber-400 hover:text-amber-600'>Business</a></li>
+            <li><a className='text-xl text-amber-400 hover:text-amber-600'>Contact Us</a></li>
+            <li>
+              <details>
+                <summary className='text-xl text-amber-400'>Services</summary>
+                <ul className="p-2">
+                  <li><a className='text-xl text-amber-400 hover:text-amber-600'>Car wash</a></li>
+                  <li><a className='text-xl text-amber-400 hover:text-amber-600'>Dry Cleaning</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a className='text-xl text-amber-400 hover:text-amber-600'>FAQ</a></li>
+          </ul>
+        </div>
+        <Link href={'/'} className="btn btn-ghost text-xl text-amber-500">KenpSite</Link>
+      </div>
+
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <li><a href='#home' className='text-xl text-amber-400 hover:text-amber-600'>Home</a></li>
+          <li><a href='#about' className='text-xl text-amber-400 hover:text-amber-600'>About</a></li>
+          <li><a href='#info' className='text-xl text-amber-400 hover:text-amber-600'>Business</a></li>
+          <li><a className='text-xl text-amber-400 hover:text-amber-600'>Contact Us</a></li>
+          <li>
+            <details>
+              <summary className='text-xl text-amber-400'>Services</summary>
+              <ul className="p-2">
+                <li><a className='text-xl text-amber-400 hover:text-amber-600'>Car wash</a></li>
+                <li><a className='text-xl text-amber-400 hover:text-amber-600'>Dry Cleaning</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a className='text-xl text-amber-400 hover:text-amber-600'>FAQ</a></li>
+        </ul>
+      </div>
+
+      <div className="navbar-end">
+        <a className="btn bg-amber-500 hover:bg-amber-600">Get Quote</a>
+      </div>
+    </div>
+  );
+}
+
+export default Navbar
