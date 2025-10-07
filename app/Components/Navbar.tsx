@@ -15,10 +15,10 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
-            <li><Link href='#home' className='text-xl text-amber-400 hover:text-amber-600'>Home</Link></li>
+            <li><Link href={'/'} className='text-xl text-amber-400 hover:text-amber-600'>Home</Link></li>
             <li><a href='#about' className='text-xl text-amber-400 hover:text-amber-600'>About</a></li>
             <li><a href='#info' className='text-xl text-amber-400 hover:text-amber-600'>Business</a></li>
-            <li><a className='text-xl text-amber-400 hover:text-amber-600'>Contact Us</a></li>
+            <li><Link href={'/contact'} className='text-xl text-amber-400 hover:text-amber-600'>Contact Us</Link></li>
             <li>
               <details>
                 <summary className='text-xl text-amber-400'>Services</summary>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
-            <li><a className='text-xl text-amber-400 hover:text-amber-600'>FAQ</a></li>
+          <li><Link href={'/faq'} className='text-xl text-amber-400 hover:text-amber-600'>FAQ</Link></li>
           </ul>
         </div>
         <Link href={'/'} className="btn btn-ghost text-xl text-amber-500">KenpSite</Link>
@@ -36,10 +36,10 @@ const Navbar = () => {
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a href='#home' className='text-xl text-amber-400 hover:text-amber-600'>Home</a></li>
+          <li><Link href={'/'} className='text-xl text-amber-400 hover:text-amber-600'>Home</Link></li>
           <li><a href='#about' className='text-xl text-amber-400 hover:text-amber-600'>About</a></li>
           <li><a href='#info' className='text-xl text-amber-400 hover:text-amber-600'>Business</a></li>
-          <li><a className='text-xl text-amber-400 hover:text-amber-600'>Contact Us</a></li>
+           <li><Link href={'/contact'} className='text-xl text-amber-400 hover:text-amber-600'>Contact Us</Link></li>
           <li>
             <details>
               <summary className='text-xl text-amber-400'>Services</summary>
@@ -49,7 +49,7 @@ const Navbar = () => {
               </ul>
             </details>
           </li>
-          <li><a className='text-xl text-amber-400 hover:text-amber-600'>FAQ</a></li>
+          <li><Link href={'/faq'} className='text-xl text-amber-400 hover:text-amber-600'>FAQ</Link></li>
         </ul>
       </div>
 

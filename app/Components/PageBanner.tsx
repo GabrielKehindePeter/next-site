@@ -3,7 +3,9 @@ import React from 'react'
 const PageBanner = () => {
   return (
     <div>
-     <div className='mt-20 h-60'>
+     <div
+      className="h-80 bg-cover bg-center flex text-left pt-20 text-white"
+      style={{ backgroundImage: "url('/imgs/slide/fm2.jpg')" }} >
          <div className="breadcrumbs max-w-xs text-sm pt-20 pl-6">
       <ul className="text-2xl">
         <li>Home</li>
