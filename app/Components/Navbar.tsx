@@ -20,13 +20,7 @@ const Navbar = () => {
             <li><a href='#info' className='text-xl text-amber-400 hover:text-amber-600'>Business</a></li>
             <li><Link href={'/contact'} className='text-xl text-amber-400 hover:text-amber-600'>Contact Us</Link></li>
             <li>
-              <details>
-                <summary className='text-xl text-amber-400'>Services</summary>
-                <ul className="p-2">
-                  <li><a className='text-xl text-amber-400 hover:text-amber-600'>Car wash</a></li>
-                  <li><a className='text-xl text-amber-400 hover:text-amber-600'>Dry Cleaning</a></li>
-                </ul>
-              </details>
+            <Link href={'/blog'} className='text-xl text-amber-400 hover:text-amber-600'>Blog</Link>
             </li>
           <li><Link href={'/faq'} className='text-xl text-amber-400 hover:text-amber-600'>FAQ</Link></li>
           </ul>
@@ -41,20 +35,14 @@ const Navbar = () => {
           <li><a href='#info' className='text-xl text-amber-400 hover:text-amber-600'>Business</a></li>
            <li><Link href={'/contact'} className='text-xl text-amber-400 hover:text-amber-600'>Contact Us</Link></li>
           <li>
-            <details>
-              <summary className='text-xl text-amber-400'>Services</summary>
-              <ul className="p-2">
-                <li><a className='text-xl text-amber-400 hover:text-amber-600'>Car wash</a></li>
-                <li><a className='text-xl text-amber-400 hover:text-amber-600'>Dry Cleaning</a></li>
-              </ul>
-            </details>
+            <Link href={'/blog'} className='text-xl text-amber-400 hover:text-amber-600'>Blog</Link>
           </li>
           <li><Link href={'/faq'} className='text-xl text-amber-400 hover:text-amber-600'>FAQ</Link></li>
         </ul>
       </div>
 
       <div className="navbar-end">
-        <a className="btn bg-amber-500 hover:bg-amber-600">Get Quote</a>
+        <a className="btn bg-amber-500 hover:bg-amber-600">Get Started</a>
       </div>
     </div>
   );

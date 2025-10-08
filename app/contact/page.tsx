@@ -4,17 +4,30 @@ import PageBanner from '../Components/PageBanner'
 export default function Page() {
   return (
 <>
-    <PageBanner />
+    <PageBanner name="Contact Us" />
     <div className="min-h-screen bg-gray-100">
       
 
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="bg-gray-300 rounded-xl p-6 md:p-10 shadow-sm">
+          <div className="bg-gray-300 rounded-xl p-6 pt-28 pb-28 shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Form column */}
+
+
               <div>
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-amber-500">Send us a message</h2>
+
+               <h1 className="text-2xl md:text-sm text-amber-500 font-bold mb-4">Locate Us</h1>
+
+                  <p className="leading-relaxed text-black">
+                    <strong>Phone:</strong> <a href="tel:08130146023">08130146023</a> &nbsp;&nbsp;
+                 
+                    <strong>Email:</strong>{' '}
+                    <a href="mailto:kenp.code@gmail.com">kenp.code@gmail.com</a>
+                  </p>
+                  <p className='text-black'><b>Address:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br />
+
+                <h2 className="text-2xl md:text-xl font-semibold mb-4 text-amber-500">Send us a message</h2>
 
                 <form className="space-y-4">
                   <label className="block">
@@ -63,7 +76,7 @@ export default function Page() {
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="btn btn-dark btn-lg w-full rounded-lg md:w-auto hover:bg-amber-500"
+                      className="btn btn-lg w-full rounded-lg md:w-auto bg-amber-600 hover:bg-black"
                     >
                       Send Message
                     </button>
@@ -71,29 +84,10 @@ export default function Page() {
                 </form>
               </div>
 
-              {/* Contact info column */}
-              <aside className="flex flex-col justify-center">
-                <h1 className="text-2xl md:text-4xl text-amber-500 font-bold mb-4">Locate Us</h1>
-
-                <div className="space-y-4 text-sm md:text-lg text-black">
-                  <p className="leading-relaxed">
-                    <strong className='text-amber-500'>Phone:</strong> <a href="tel:08130146023">08130146023</a>
-                  </p>
-
-                  <p className="leading-relaxed">
-                    <strong className='text-amber-500'>Email:</strong>{' '}
-                    <a href="mailto:kenp.code@gmail.com">kenp.code@gmail.com</a>
-                  </p>
-
-                  <p className="leading-relaxed">
-                    <strong className='text-amber-500'>Address:</strong>{' '}
-                    <span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corrupti,
-                      numquam at aspernatur dolor optio laudantium laborum?
-                    </span>
-                  </p>
-                </div>
-              </aside>
+<div>
+  <img src={'/imgs/contact2.jpg'} className='rounded-2xl' />
+</div>
+       
             </div>
           </div>
         </div>

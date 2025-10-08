@@ -3,8 +3,8 @@ import PageBanner from '../Components/PageBanner'
 const faq = () => {
   return (
     <div>
-    <PageBanner />
-
+    <PageBanner name="FAQ" />
+    
   <div className="w-full bg-white p-4 md:pt-40 md:pb-30 md:pr-10 md:pl-10">
   <div className="space-y-4">
     <div className="collapse collapse-plus bg-gray-200 text-black border border-amber-300">
