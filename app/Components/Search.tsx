@@ -1,23 +1,46 @@
+"use client";
 
-"use client"
-import React, { useState } from "react";
-const Search = () => {
+import React, { useEffect, useState, useRef } from "react";
+import { useRouter } from "next/navigation";
 
-let [search,setSearch] = useState('')
+/**
+ * Props:
+ * - initialValue: string (optional) to populate input on first render
+ */
+export default function Search({ initialValue = "" }) {
+  const [value, setValue] = useState(initialValue);
+  const router = useRouter();
+  const debounceRef = useRef(null);
 
-  const handleSearch =()=>{
-    alert(search)
-  }
+  // Debounce updating the URL so we don't spam history or re-renders
+  useEffect(() => {
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+
+    debounceRef.current = setTimeout(() => {
+      const trimmed = (value || "").trim();
+      const encoded = encodeURIComponent(trimmed);
+
+      // replace so we don't fill up browser history on each keystroke
+      const url = encoded ? `/blog?search=${encoded}&page=1` : `/blog`;
+      router.replace(url);
+    }, 300);
+
+    return () => clearTimeout(debounceRef.current);
+  }, [value, router]);
 
   return (
-       <fieldset className="bg-base-200 border-base-300 rounded-box border p-4 mb-10">
-            <legend className="fieldset-legend text-amber-100">Search Posts</legend>
-            <div className="join">
-                <input type="text" name="search" onChange={(e)=>setSearch((e).target.value)} className="input join-item focus:border-0 border-amber-100  sm:w-100 lg:w-250" placeholder="Enter key words" />
-                <button onClick={handleSearch} className="btn join-item bg-black border-amber-100 border-amber-100">Search</button>
-            </div>
-        </fieldset>
-  )
+    <fieldset className="bg-base-200 border-base-300 rounded-box border p-4 mb-6">
+      <legend className="fieldset-legend text-amber-100">Search Posts</legend>
+      <div className="join">
+        <input
+          type="text"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          placeholder="Enter keywords"
+          className="input join-item focus:border-0 border-amber-100 md:w-190 lg:w-290 sm:w-150"
+        />
+         
+      </div>
+    </fieldset>
+  );
 }
-
-export default Search

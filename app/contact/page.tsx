@@ -5,29 +5,21 @@ export default function Page() {
   return (
 <>
     <PageBanner name="Contact Us" />
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen ">
       
 
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="bg-gray-300 rounded-xl p-6 pt-28 pb-28 shadow-sm">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className='mt-10 p-5 text-3xl text-gray-400'>Want to Reach Us?</h2>
+          <div className="rounded-xl p-8 pt-8 pb-28 shadow-sm">
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Form column */}
 
 
-              <div>
+              <div className='bg-gray-300 rounded-br-4xl rounded-tl-4xl p-4 col-span-2'>
 
-               <h1 className="text-2xl md:text-sm text-amber-500 font-bold mb-4">Locate Us</h1>
-
-                  <p className="leading-relaxed text-black">
-                    <strong>Phone:</strong> <a href="tel:08130146023">08130146023</a> &nbsp;&nbsp;
-                 
-                    <strong>Email:</strong>{' '}
-                    <a href="mailto:kenp.code@gmail.com">kenp.code@gmail.com</a>
-                  </p>
-                  <p className='text-black'><b>Address:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br />
-
-                <h2 className="text-2xl md:text-xl font-semibold mb-4 text-amber-500">Send us a message</h2>
+                <h2 className="text-2xl md:text-xl font-semibold mb-4 text-black">Send us a message</h2>
 
                 <form className="space-y-4">
                   <label className="block">
@@ -68,7 +60,7 @@ export default function Page() {
                     <textarea
                       placeholder="Message"
                       className="textarea textarea-neutral w-full mt-2"
-                      rows={6}
+                      rows={3}
                       aria-label="Message"
                     />
                   </label>
@@ -85,7 +77,7 @@ export default function Page() {
               </div>
 
 <div>
-  <img src={'/imgs/contact2.jpg'} className='rounded-2xl' />
+  <img src={'/imgs/contact2.jpg'} className='rounded-tr-4xl rounded-bl-4xl' />
 </div>
        
             </div>

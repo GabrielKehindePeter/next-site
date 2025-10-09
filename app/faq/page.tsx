@@ -4,10 +4,10 @@ const faq = () => {
   return (
     <div>
     <PageBanner name="FAQ" />
-    
-  <div className="w-full bg-white p-4 md:pt-40 md:pb-30 md:pr-10 md:pl-10">
+    <h2 className='mt-10 p-5 text-3xl text-gray-400'>Frequently Ask Questions</h2>
+  <div className="w-full p-4 md:pt-10 md:pb-30 md:pr-10 md:pl-10">
   <div className="space-y-4">
-    <div className="collapse collapse-plus bg-gray-200 text-black border border-amber-300">
+    <div className="collapse collapse-plus border border-2 border-gray-400 shadow-md shadow-amber-400">
       <input type="radio" name="my-accordion-3" defaultChecked />
       <div className="collapse-title font-semibold text-xl">How do I create an account?</div>
       <div className="collapse-content text-sm">
@@ -36,14 +36,14 @@ const faq = () => {
         </div>
 
         <div className="mt-4">
-          <button className="btn rounded-xl bg-amber-500 border-amber-300 hover:bg-black">
-            Read More
-          </button>
+           <button className="btn bg-gray-400 text-gray-800 shadow-md shadow-amber-400 rounded-sm hover:bg-amber-500 mt-3">
+                Read More
+              </button>
         </div>
       </div>
     </div>
 
-    <div className="collapse collapse-plus bg-gray-200 text-black border border-amber-300">
+    <div className="collapse collapse-plus border border-2 border-gray-400 shadow-md shadow-amber-400">
       <input type="radio" name="my-accordion-3" />
       <div className="collapse-title font-semibold text-xl">
         I forgot my password. What should I do?
@@ -74,14 +74,14 @@ const faq = () => {
         </div>
 
         <div className="mt-4">
-          <button className="btn rounded-xl bg-amber-500 border-amber-300 hover:bg-black">
-            Read More
-          </button>
+           <button className="btn bg-gray-400 text-gray-800 shadow-md shadow-amber-400 rounded-sm hover:bg-amber-500 mt-3">
+                Read More
+              </button>
         </div>
       </div>
     </div>
 
-    <div className="collapse collapse-plus bg-gray-200 text-black border border-amber-300">
+    <div className="collapse collapse-plus border border-2 border-gray-400 shadow-md shadow-amber-400">
       <input type="radio" name="my-accordion-3" />
       <div className="collapse-title font-semibold text-xl">
         How do I update my profile information?
@@ -112,13 +112,13 @@ const faq = () => {
         </div>
 
         <div className="mt-4">
-          <button className="btn rounded-xl bg-amber-500 border-amber-300 hover:bg-black">
-            Read More
-          </button>
+         <button className="btn bg-gray-400 text-gray-800 shadow-md shadow-amber-400 rounded-sm hover:bg-amber-500 mt-3">
+                Read More
+              </button>
         </div>
       </div>
     </div>
-    <div className="collapse collapse-plus bg-gray-200 text-black border border-amber-300">
+    <div className="collapse collapse-plus border border-2 border-gray-400 shadow-md shadow-amber-400">
       <input type="radio" name="my-accordion-3" />
       <div className="collapse-title font-semibold text-xl">
         How do delete my account?
@@ -149,13 +149,13 @@ const faq = () => {
         </div> 
 
         <div className="mt-4">
-          <button className="btn rounded-xl bg-amber-500 border-amber-300 hover:bg-black">
-            Read More
-          </button>
+         <button className="btn bg-gray-400 text-gray-800 shadow-md shadow-amber-400 rounded-sm hover:bg-amber-500 mt-3">
+                Read More
+              </button>
         </div>
       </div>
     </div>
-    <div className="collapse collapse-plus bg-gray-200 text-black border border-amber-300">
+    <div className="collapse collapse-plus border border-2 border-gray-400 shadow-md shadow-amber-400">
       <input type="radio" name="my-accordion-3" />
       <div className="collapse-title font-semibold text-xl">
         How do I Top Up my account?
@@ -182,9 +182,9 @@ const faq = () => {
         </div>
 
         <div className="mt-4">
-          <button className="btn rounded-xl bg-amber-500 border-amber-300 hover:bg-black">
-            Read More
-          </button>
+         <button className="btn bg-gray-400 text-gray-800 shadow-md shadow-amber-400 rounded-sm hover:bg-amber-500 mt-3">
+                Read More
+              </button>
         </div>
       </div>
     </div>
