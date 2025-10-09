@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 export default function PostsClient({ initialSearch = "", initialPage = 1 }) {
   const router = useRouter();
@@ -85,16 +86,19 @@ export default function PostsClient({ initialSearch = "", initialPage = 1 }) {
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 p-1">
           {visible.map((post) => (
-            <div
-              key={post.id}
-              className="mb-6 p-4 border border-gray-300 rounded-lg shadow-sm"
-            >
-              <h2 className="font-semibold text-lg text-amber-400">{post.title}</h2>
-              <p className="text-gray-700 mt-2 whitespace-pre-line">{post.body}</p>
+           <div
+            key={post.id}
+            className="mb-6 p-4 border border-gray-300 rounded-lg shadow-sm"
+          >
+            <h2 className="font-semibold text-lg text-amber-400">{post.title}</h2>
+            <p className="text-gray-500 mt-2 whitespace-pre-line">{post.body}</p>
+
+            <Link href={`/blog-detail?id=${post.id}`}>
               <button className="btn bg-gray-400 text-gray-800 shadow-md shadow-amber-400 rounded-sm hover:bg-amber-500 mt-3">
                 Read More
               </button>
-            </div>
+            </Link>
+          </div>
           ))}
         </div>
         </div>

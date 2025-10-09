@@ -5,7 +5,7 @@ const PageBanner = ({name}) => {
     <div>
      <div
       className="h-80 bg-cover bg-center flex text-left pt-20 text-white"
-      style={{ backgroundImage: "url('/imgs/img1.jpg')" }} >
+      style={{ backgroundImage: "url('/imgs/bg.jpg')" }} >
          <div className="breadcrumbs max-w-xs text-sm pt-20 pl-6">
       <ul className="text-2xl">
         <li>Home</li>
