@@ -1,6 +1,7 @@
 import React from 'react'
 
-const PageBanner = ({pagename}) => {
+
+const PageBanner = ({pagename}: { pagename: string }) => {
   return (
     <div>
      <div
