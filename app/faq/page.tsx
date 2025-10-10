@@ -3,7 +3,7 @@ import PageBanner from '../Components/PageBanner'
 const faq = () => {
   return (
     <div>
-    <PageBanner name="FAQ" />
+    <PageBanner pagename="FAQ" />
     <h2 className='mt-10 p-5 text-3xl text-gray-400'>Frequently Ask Questions</h2>
   <div className="w-full p-4 md:pt-10 md:pb-30 md:pr-10 md:pl-10">
   <div className="space-y-4">

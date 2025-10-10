@@ -8,7 +8,7 @@ export default function Page({ searchParams }) {
 
   return (
     <div>
-      <PageBanner name="Blog" />
+      <PageBanner pagename="Blog" />
       <div className="p-8 mb-20">
         <Search initialValue={initialSearch} />
         <PostsClient initialSearch={initialSearch} initialPage={initialPage} />

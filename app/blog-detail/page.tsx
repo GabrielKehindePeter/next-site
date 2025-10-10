@@ -12,7 +12,7 @@ const Page = async ({ searchParams }) => {
 
   return (
     <div>
-      <PageBanner name="Blog Details" />
+      <PageBanner pagename="Blog Details" />
 
       <div className="p-10 pt-30 pb-30">
         <h1 className="text-3xl font-bold text-gray-200 mb-4">

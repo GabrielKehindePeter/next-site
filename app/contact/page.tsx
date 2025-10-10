@@ -4,7 +4,7 @@ import PageBanner from '../Components/PageBanner'
 export default function Page() {
   return (
 <>
-    <PageBanner name="Contact Us" />
+    <PageBanner pagename="Contact Us" />
     <div className="min-h-screen ">
       
 
