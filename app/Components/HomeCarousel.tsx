@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const HomeCarousel = () => {
   return (
-    <div className="carousel w-full h-135 "  id='home'>
+    <div className="carousel sm:h-10 lg:h-145 w-full "  id='home'>
   <div id="slide1" className="carousel-item relative w-full ">
     <img
       src="/imgs/slide/fm2.jpg"
