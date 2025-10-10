@@ -1,10 +1,20 @@
+import React from "react";
 import PageBanner from "../Components/PageBanner";
 import Search from "../Components/Search";
 import PostsClient from "../Components/PostsClient";
 
-export default function Page({ searchParams }) {
+type Props = {
+  searchParams: {
+    search?: string;
+    page?: string;
+  };
+};
+
+export default function Page({ searchParams }: Props) {
   const initialSearch = searchParams?.search ?? "";
-  const initialPage = parseInt(searchParams?.page ?? "1", 10);
+  // parse page, fallback to 1 if missing or NaN
+  const parsed = parseInt(searchParams?.page ?? "1", 10);
+  const initialPage = Number.isNaN(parsed) ? 1 : parsed;
 
   return (
     <div>

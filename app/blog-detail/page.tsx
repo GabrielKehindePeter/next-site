@@ -2,7 +2,8 @@ import React from "react";
 import PageBanner from "../Components/PageBanner";
 import Link from "next/link";
 
-const Page = async ({ searchParams }) => {
+const Page = async ({ searchParams }: {  searchParams: { id?: string }  }) => {
+  
   // extract the id from URL: /blog-detail?id=1
   const id = searchParams?.id;
 
