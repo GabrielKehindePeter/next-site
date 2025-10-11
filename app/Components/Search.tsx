@@ -53,7 +53,7 @@ export default function Search({ initialValue = "" }: Props) {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder="Enter keywords"
-          className="input join-item focus:border-0 border-amber-100 md:w-190 lg:w-290 sm:w-150"
+          className="input join-item focus:border-0 border-amber-100 w-80 lg:w-290"
         />
       </div>
     </fieldset>

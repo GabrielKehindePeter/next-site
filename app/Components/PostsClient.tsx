@@ -125,7 +125,7 @@ export default function PostsClient({
       )}
 
       {/* Pagination controls */}
-      <div className="mt-4">
+      <div className="mt-4 mb-10">
         <div className="join">
           <button
             className="join-item btn bg-amber-500"
