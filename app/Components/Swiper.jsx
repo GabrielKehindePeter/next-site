@@ -33,13 +33,11 @@ const SliderDemo = () => {
           </button>
         </div>
       </div>
-<div className="bg-gray-300 p-2">
+<div className="p-2">
      <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={30}
         slidesPerView={3} // Default
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
