@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
+import Themeswitcher from './Themeswitcher';
 
 const Navbar = () => {
   return (
@@ -42,7 +43,8 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <a className="btn bg-amber-500 hover:bg-amber-600">Get Started</a>
+        <Themeswitcher/>
+        <a className="btn bg-amber-500 hover:bg-amber-600 rounded-lg">Get Started</a>
       </div>
     </div>
   );
