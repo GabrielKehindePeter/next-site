@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Info from "./Components/Info";
 import Business from "./Components/Business";
 import SliderDemo from "./Components/Swiper";
+import BackToTop from "./Components/BackToTop";
 export default function Home() {
   return (
 <div>
@@ -14,6 +15,7 @@ export default function Home() {
 <About />
 <Info />
 <Business />
+<BackToTop />
 </div>
   );
 }
