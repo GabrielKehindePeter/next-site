@@ -1,18 +1,14 @@
 import type { NextConfig } from "next";
-import nextPWA from "next-pwa";
-import runtimeCaching from "next-pwa/cache"; // optional, recommended
 
-const withPWA = nextPWA({
+const withPWA = require("next-pwa")({
   dest: "public",
   register: true,
   skipWaiting: true,
-  runtimeCaching,
-  // disable: process.env.NODE_ENV === "development", // uncomment to disable in dev
+  runtimeCaching: require("next-pwa/cache"),
 });
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // any other Next config options
 };
 
 export default withPWA(nextConfig);
